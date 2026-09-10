@@ -1,0 +1,20 @@
+work_root: outputs
+
+sources:
+  2t: [data/s2s/2t]
+  t: [data/s2s/t]
+  gh: [data/s2s/gh]
+  u: [data/s2s/u]
+  v: [data/s2s/v]
+  sp: [data/s2s/sp]
+  ssrd: [data/s2s/ssrd]
+
+audit_inputs:
+  expected_common_dates: data/expected_common_init_dates.csv
+
+dssr:
+  target: data/dssr/dssr_daily_0p1_float32.npy
+  complete: data/dssr/dssr_complete_bool.npy
+  coverage_mask: data/dssr/coverage_mask_bool.npy
+  terrain: data/terrain/terrain_raw_float32.npy
+  solar_geometry: data/solar/solar_geom_doy_float32.npy

@@ -1,0 +1,20 @@
+domain:
+  latitude: [27.0, 37.0]
+  longitude: [78.0, 99.0]
+target_grid: [101, 211]
+valid_grid_cells: 17519
+lead_days: [1, 40]
+history_days: 7
+dssr_window_bjt: [6, 20]
+split:
+  train_init_years: [2005, 2020]
+  validation_init_years: [2021, 2021]
+  test_init_years: [2022, 2023]
+model:
+  deterministic: U-Net
+  probabilistic: conditional residual diffusion
+  diffusion_steps: 1000
+  ddim_steps: 8
+  ensemble_members: 30
+  residual_scale: 0.15
+  recentering: true

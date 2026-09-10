@@ -1,0 +1,13 @@
+seed: 42
+optimizer: AdamW
+learning_rate: 3.0e-4
+weight_decay: 1.0e-4
+max_epochs: 100
+early_stopping_patience: 12
+gradient_clip_norm: 1.0
+amp: true
+batch_size_candidates: [16, 8, 4, 2]
+minimum_effective_batch: 16
+gradient_loss_weight: 0.02
+lead_embedding_dim: 32
+

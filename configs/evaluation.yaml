@@ -1,0 +1,8 @@
+calibration_scales: [0.25, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00, 2.50, 3.00]
+probability_interval: [0.10, 0.90]
+representative_leads: [1, 7, 15, 30, 40]
+member_sensitivity_sizes: [4, 8, 16, 30]
+member_sensitivity_seeds: [42, 2026, 3407]
+bootstrap_replicates: 2000
+bootstrap_seed: 42
+residual_scale: 0.15

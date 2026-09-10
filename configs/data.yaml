@@ -1,0 +1,41 @@
+pressure_levels_hpa: [10, 50, 100, 200, 300, 500, 700, 850, 925, 1000]
+pressure_variables: [t, gh, u, v]
+surface_variables: [2t, sp]
+auxiliary_variables: [ssrd]
+lead_days: [1, 40]
+history_days: 7
+timezone_offset_hours: 8
+dssr_window_bjt: [6, 20]
+dssr_scale_wm2: 700.0
+expected_s2s_grid:
+  latitude: [27.0, 37.5, 1.5]
+  longitude: [78.0, 99.0, 1.5]
+  shape: [8, 15]
+expected_target_grid:
+  latitude: [27.0, 37.0, 0.1]
+  longitude: [78.0, 99.0, 0.1]
+  shape: [101, 211]
+expected_valid_pixels: 17519
+split:
+  train_init_years: [2005, 2020]
+  validation_init_years: [2021, 2021]
+  test_init_years: [2022, 2023]
+  train_target_end: '2020-12-31'
+  validation_target_start: '2021-01-01'
+  validation_target_end: '2021-12-31'
+  test_target_start: '2022-01-01'
+  test_target_end: '2023-12-31'
+
+stage01:
+  file_timeout_seconds: 180
+stage02:
+  audited_subset_override:
+    enabled: true
+    required_actual_common_dates: 2044
+    excluded_expected_dates:
+      - '2005-01-01'
+      - '2006-01-01'
+      - '2007-01-01'
+      - '2008-01-01'
+      - '2009-01-01'
+      - '2010-01-10'

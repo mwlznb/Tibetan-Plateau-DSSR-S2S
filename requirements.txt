@@ -1,0 +1,10 @@
+numpy
+pandas
+pyarrow
+duckdb
+xarray
+zarr
+numcodecs
+eccodes
+PyYAML
+torch

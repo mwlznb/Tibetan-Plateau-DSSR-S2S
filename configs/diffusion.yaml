@@ -1,0 +1,16 @@
+seed: 42
+diffusion_steps_K: 1000
+prediction_type: epsilon
+beta_schedule: linear
+beta_start: 1.0e-4
+beta_end: 2.0e-2
+optimizer: AdamW
+learning_rate: 2.0e-4
+weight_decay: 1.0e-4
+max_epochs: 50
+early_stopping_patience: 8
+amp: true
+gradient_clip_norm: 1.0
+ddim_steps: 8
+ensemble_members: 30
+residual_scale: 0.15
